@@ -1,0 +1,149 @@
+body {
+    text-align: center;
+    background-image: url(../img/img.jpg);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 40px;
+    color: khaki;
+    border: 3px solid khaki;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 3px;
+    background-color: darkslategray;
+    opacity: 0.9;
+}
+
+.smiley {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.smiley:hover a p.new-label {
+    content: '😍';
+}
+
+.board-container {
+    display: inline-block;
+    text-align: center;
+    background-color: khaki;
+    border: 5px solid black;
+    position: relative;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.covered {
+    content-visibility: hidden;
+    background-color: darkslategray;
+}
+
+.marked {
+    content-visibility: visible;
+}
+
+.timer-container {
+    display: inline-block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+    background-color: khaki;
+    opacity: 0.9;
+}
+
+.timer-header {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.timer-num {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: darkblue;
+}
+
+.student-name {
+    position: absolute;
+    left: 0px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 140px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 0px;
+    color: khaki;
+    background-color: darkslategray;
+}
+
+.levels-container {
+    text-align: center;
+}
+
+.level-btn {
+    margin-top: 0px;
+    background-color: lightgrey;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lives-counter {
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    background-color: grey;
+    font-size: 30px;
+    opacity: 0.9;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 190px;
+    left: 520px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: none;
+}
+
+.hints-container {
+    display: inline-block;
+    background-color: darkslategray;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px;
+    margin-right: auto;
+}
+
+.hint {
+    margin-top: 0px;
+    background-color: lightgrey;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.7;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <div class="student-name">Ben Ernst</div>
+
+    <h1>Minesweeper</h1>
+
+    <div class="timer-container">
+        <p class="timer-header">
+            TIME:
+            <span class="timer-num">0</span>
+        </p>
+    </div>
+
+    <button class="smiley" onclick="smileyClicked(this)">😀</button>
+
+    <div class="hints-container">
+        <button class="hint" onclick="isHintOn(this)">💡</button>
+        <button class="hint" onclick="isHintOn(this)">💡</button>
+        <button class="hint" onclick="isHintOn(this)">💡</button>
+    </div>
+
+    <div class="levels-container">
+        <button class="level-btn" onclick="setLevel(4, 2)">Beginner</button>
+        <button class="level-btn" onclick="setLevel(8, 12)">Medium</button>
+        <button class="level-btn" onclick="setLevel(12, 30)">Expert</button>
+    </div>
+
+    <div class="board-container"></div>
+
+    <div class="lives-counter">
+        <div>BOOM 💣</div>
+        <span> 3</span> LIFE LEFT
+    </div>
+
+    <script src="js/settings.js"></script>
+    <script src="js/operations.js"></script>
+    <script src="js/bonus.js"></script>
+    <script src="js/utils.js"></script>
+
+    <!-- Preventing Context Menu appearance when right-clicking on the page: -->
+    <script>window.addEventListener("contextmenu", e => e.preventDefault());</script>
+</body>
+
+</html>
